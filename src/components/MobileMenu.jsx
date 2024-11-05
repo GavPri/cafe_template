@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const MobileMenu = ({ menuOpen }) => {
+const MobileMenu = ({ menuOpen, handleMenuChange }) => {
   return (
     <div
       className={`h-[calc(100vh-96px)] w-screen bg-bg border-border transition-all ease-in duration-300 ${
@@ -12,6 +12,7 @@ const MobileMenu = ({ menuOpen }) => {
     >
       <nav className="text-textS tracking-wide w-full h-full text-center flex flex-col justify-center items-center">
         <NavLink
+          onClick={handleMenuChange}
           to="/"
           className={`leading-10 text-3xl mb-10  ${
             menuOpen
@@ -22,6 +23,7 @@ const MobileMenu = ({ menuOpen }) => {
           Home
         </NavLink>
         <NavLink
+          onClick={handleMenuChange}
           to="/about"
           className={`leading-10 text-3xl mb-10  ${
             menuOpen
@@ -32,6 +34,7 @@ const MobileMenu = ({ menuOpen }) => {
           About
         </NavLink>
         <NavLink
+          onClick={handleMenuChange}
           to="/find-us"
           className={`leading-10 text-3xl mb-10  ${
             menuOpen
