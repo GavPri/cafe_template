@@ -16,7 +16,7 @@ const Root = () => {
       <div>
         <NavigationBar />
       </div>
-      <div className="min-h-screen">
+      <div className="min-h-[calc(100vh-96px)] flex flex-col">
         <Outlet />
         {/* TODO --- add Footer */}
         {/* <Footer /> */}
