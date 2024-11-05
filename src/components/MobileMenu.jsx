@@ -11,11 +11,36 @@ const MobileMenu = ({ menuOpen }) => {
       }`}
     >
       <nav className="text-textS tracking-wide w-full h-full text-center flex flex-col justify-center items-center">
-        <ul>
-          <li className={`leading-10 text-3xl mb-10  ${menuOpen ? 'opacity-100 transition-opacity ease-in duration-500' : 'opacity-0'}`}>Home</li>
-          <li className={`leading-10 text-3xl mb-10  ${menuOpen ? 'opacity-100 transition-opacity ease-in duration-500' : 'opacity-0'}`}>About</li>
-          <li className={`leading-10 text-3xl mb-10  ${menuOpen ? 'opacity-100 transition-opacity ease-in duration-500' : 'opacity-0'}`}>Find Us</li>
-        </ul>
+        <NavLink
+          to="/"
+          className={`leading-10 text-3xl mb-10  ${
+            menuOpen
+              ? "opacity-100 transition-opacity ease-in duration-500"
+              : "opacity-0"
+          }`}
+        >
+          Home
+        </NavLink>
+        <NavLink
+          to="/about"
+          className={`leading-10 text-3xl mb-10  ${
+            menuOpen
+              ? "opacity-100 transition-opacity ease-in duration-500"
+              : "opacity-0"
+          }`}
+        >
+          About
+        </NavLink>
+        <NavLink
+          to="/find-us"
+          className={`leading-10 text-3xl mb-10  ${
+            menuOpen
+              ? "opacity-100 transition-opacity ease-in duration-500"
+              : "opacity-0"
+          }`}
+        >
+          Find Us
+        </NavLink>
       </nav>
     </div>
   );
