@@ -24,6 +24,11 @@ function App() {
       </>
     );
   };
+
+  // router variable
+  const router = createBrowserRouter(
+    createRoutesFromElements(<Route path="/" element={<Root />}></Route>)
+  );
   return (
     <div>
       <NavigationBar />
