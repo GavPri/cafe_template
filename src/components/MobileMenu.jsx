@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 const MobileMenu = ({ menuOpen, handleMenuChange }) => {
   return (
     <div
-      className={`w-screen bg-bg border-border transition-all ease-in duration-300 ${
+      className={`absolute w-screen bg-bg border-border transition-all ease-in duration-300 ${
         menuOpen
           ? "translate-y-0 opacity-100 h-[calc(100vh-96px)]"
           : "-translate-y-[200%] opacity-0 h-0"
