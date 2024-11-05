@@ -9,6 +9,10 @@ import {
 } from "react-router-dom";
 
 function App() {
+  // Root Variable
+  const Root = () => {
+    return <></>;
+  };
   return (
     <div>
       <NavigationBar />
