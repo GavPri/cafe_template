@@ -1,13 +1,13 @@
-// router.js
 import {
   createBrowserRouter,
   createRoutesFromElements,
   Route,
+  Outlet
 } from "react-router-dom";
-import NavigationBar from "./components/NavigationBar";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import FindUs from "./pages/FindUs";
+import NavigationBar from "../components/NavigationBar";
+import Home from "../pages/Home";
+import About from "../pages/About";
+import FindUs from "../pages/FindUs";
 
 // Root Component
 const Root = () => {
