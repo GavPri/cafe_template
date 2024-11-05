@@ -11,7 +11,18 @@ import {
 function App() {
   // Root Variable
   const Root = () => {
-    return <></>;
+    return (
+      <>
+        <div>
+          <NavigationBar />
+        </div>
+        <div className="min-h-screen">
+          <Outlet />
+          {/* TODO --- add Footer */}
+          {/* <Footer/>  */}
+        </div>
+      </>
+    );
   };
   return (
     <div>
