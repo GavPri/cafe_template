@@ -1,5 +1,11 @@
+import NavigationBar from "./components/NavigationBar";
+
 function App() {
-  return <div className="h-24 w-24 bg-bg">Hello there</div>;
+  return (
+    <div>
+      <NavigationBar />
+    </div>
+  );
 }
 
 export default App;
