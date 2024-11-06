@@ -49,7 +49,7 @@ const Home = () => {
             reveal ? "opacity-100 delay-[800ms]" : "opacity-0"
           }`}
         >
-          Get Directions
+          Find Us
         </NavLink>
         <NavLink
           className={`text-lg py-2 px-4 bg-[#1DB954] border-border rounded-md tracking-wide text-textP transition-all duration-700 ease-in-out ${
